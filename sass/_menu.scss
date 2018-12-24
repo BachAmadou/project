@@ -64,7 +64,7 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background: darken($primary-color, 5);
+        background: $first-color;
         list-style: none;
         transform: translate3d(0, -100%, 0);
         @include easeOut;
@@ -76,7 +76,7 @@
     }
 
     &-branding {
-        background: $primary-color;
+        background: $second-color;
         transform: translate3d(0, 100%, 0);
         @include easeOut;
 
@@ -92,7 +92,7 @@
             background-size: cover;
             background-position: center;
             border-radius: 50%;
-            border: solid 3px $secondary-color;
+            border: solid 3px $first-color;
 
         }
     }

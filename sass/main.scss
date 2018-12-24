@@ -10,7 +10,7 @@
 
 body {
     // @include background;
-    background-color: $primary-color;
+    background-color: $second-color;
     color: #fff;
     box-sizing: border-box;
     height: 100%;
@@ -26,7 +26,25 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
+ //LOGO
+#logo {
+    position: absolute;
+    z-index: 2;
+    left: 35px;
+    top: 35px;
+}
+
+.logo-initial {
+    border: $first-color 3px solid;
+    padding: 1rem;
+
+}
+
 // HEADINGS
+.large-heading-1 {
+    font-size: 4rem;
+}
 h1,
 h2,
 h3 {
@@ -55,13 +73,13 @@ header {
 }
 
 .text-secondary {
-    color: $secondary-color;
+    color: $first-color;
 }
 
 main {
     padding: 4rem;
-    // height: 100%;
     min-height: calc(100vh - 60px);
+    
     .icons {
         margin-top: 1rem;
 
@@ -69,16 +87,17 @@ main {
             padding: .4rem;
 
             &:hover {
-                color: $secondary-color;
+                color: $first-color;
                 @include easeOut();
             }
         }
     }
 
     &#home {
+        text-align: center;
         overflow: hidden;
         h1 {
-            margin-top: 20vh;
+            margin-top: 10vh;
         }
     }
 }
@@ -86,7 +105,7 @@ main {
 //  ABOUT DESIGN
 .about-info {
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 20px;
     grid-template-areas:    
         'bioimage bio bio'
         'job1 job2 job3';
@@ -98,7 +117,7 @@ main {
         width: 250px;
         height: 250px;
         border-radius: 50%;
-        border: $secondary-color 3px solid;
+        border: $first-color 3px solid;
     }
     
     .bio {
@@ -119,7 +138,7 @@ main {
     }
     
     .job {
-        background: lighten($primary-color, 5);
+        background: lighten($first-color, 5);
         padding: .5rem;
         border-bottom: $secondary-color 5px solid;
     }
@@ -129,16 +148,16 @@ main {
 .projects {
     display: grid;
     grid-gap: 0.7rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     
     img {
         width: 100%;
-        border: 3px solid #fff;
+        // border: 3px solid #fff;
     }
 
-    .project-img:hover {
+    .projects-img:hover {
         opacity: .5;
-        border-color: $secondary-color;
+        border-color: $first-color;
         @include easeOut;
     }
 }
@@ -150,7 +169,7 @@ main {
     border: 0;
     margin-bottom: 0.3rem;
     &:hover {
-        background: $secondary-color;
+        background: $first-color;
         color: $secondary-color;
     }
 }
@@ -165,6 +184,7 @@ main {
     @extend .btn;
     background: lighten($primary-color, 50);
     color: #fff;
+    padding-right: .5rem;
 }
 
 // CONTACT PAGE STYLE
@@ -184,7 +204,7 @@ main {
 
         &:hover {
             padding: .5rem 1.5rem;
-            background: $secondary-color;
+            background: $first-color;
             color: #fff;
 
             span {
