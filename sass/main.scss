@@ -1,7 +1,6 @@
 @import "config";
 @import "menu";
 
-
 // BASIC SET UP
 * {
     margin: 0;
@@ -21,7 +20,7 @@ body {
 
 // WRAPPER
 #wrapper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/bg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/bg-2.jpg');
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -46,6 +45,8 @@ body {
 .large-heading-1 {
     font-size: 4rem;
 }
+
+
 h1,
 h2,
 h3 {
@@ -103,6 +104,7 @@ main {
     }
 }
 
+
 //  ABOUT DESIGN
 .about-info {
     display: grid;
@@ -156,15 +158,17 @@ main {
 
 // PORTFOLIO STYLE
 .projects {
+    height: auto;
     display: grid;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .7rem;
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(3, 1fr);
     
-    img {
+    .project-img {
         width: 100%;
     }
 
-    .projects-img:hover {
+    .project-img:hover {
         opacity: .5;
         border-color: $first-color;
         @include easeOut;

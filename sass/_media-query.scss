@@ -46,7 +46,7 @@
         transform: translate3d(100%, 0, 0);
 
         .portrait {
-            background: url('../img/me.jpg');
+            background: url('../img/moi-2.jpg');
             width: 150px;
             height: 150px;
             background-size: cover;
@@ -68,6 +68,17 @@
 
     .projects {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    // blog section
+    #blog {
+        h2 {
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
     }
     
 }
@@ -119,7 +130,7 @@
         transform: translate3d(100%, 0, 0);
 
         .portrait {
-            background: url('../img/me.jpg');
+            background: url('../img/moi-2.jpg');
             width: 150px;
             height: 150px;
             background-size: cover;
@@ -130,6 +141,17 @@
     .projects {
         grid-template-columns: 1fr;
         width: 100%;
+    }
+
+    // blog section
+    #blog {
+        h2 {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
     }
     
 }

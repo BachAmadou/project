@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/me.jpg");
+      background: url("../img/moi-2.jpg");
       background-size: cover;
       background-position: center;
       border-radius: 50%;
@@ -105,7 +105,7 @@ body {
   line-height: 1.5; }
 
 #wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg-2.jpg");
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
@@ -199,12 +199,14 @@ main {
     border-bottom: #eece1a 5px solid; }
 
 .projects {
+  height: auto;
   display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(4, 1fr); }
-  .projects img {
+  grid-gap: .7rem;
+  grid-template-rows: repeat(1, 300px);
+  grid-template-columns: repeat(3, 1fr); }
+  .projects .project-img {
     width: 100%; }
-  .projects .projects-img:hover {
+  .projects .project-img:hover {
     opacity: .5;
     border-color: #2e70b7;
     transition: all 0.1s ease-out; }
@@ -284,7 +286,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/me.jpg");
+      background: url("../img/moi-2.jpg");
       width: 150px;
       height: 150px;
       background-size: cover;
@@ -293,7 +295,11 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #blog h2 {
+    font-size: 40px; }
+  #blog h1 {
+    font-size: 30px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -323,11 +329,15 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/me.jpg");
+      background: url("../img/moi-2.jpg");
       width: 150px;
       height: 150px;
       background-size: cover;
       background-position: center; }
   .projects {
     grid-template-columns: 1fr;
-    width: 100%; } }
+    width: 100%; }
+  #blog h2 {
+    font-size: 30px; }
+  #blog h1 {
+    font-size: 30px; } }
