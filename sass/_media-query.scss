@@ -69,6 +69,17 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    // blog section
+    #blog {
+        h2 {
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+    }
     
 }
 
@@ -130,6 +141,17 @@
     .projects {
         grid-template-columns: 1fr;
         width: 100%;
+    }
+
+    // blog section
+    #blog {
+        h2 {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
     }
     
 }

@@ -1,7 +1,6 @@
 @import "config";
 @import "menu";
 
-
 // BASIC SET UP
 * {
     margin: 0;
@@ -156,15 +155,17 @@ main {
 
 // PORTFOLIO STYLE
 .projects {
+    height: auto;
     display: grid;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .7rem;
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(3, 1fr);
     
-    img {
+    .project-img {
         width: 100%;
     }
 
-    .projects-img:hover {
+    .project-img:hover {
         opacity: .5;
         border-color: $first-color;
         @include easeOut;
@@ -195,6 +196,30 @@ main {
     color: #fff;
     padding-right: .5rem;
 }
+
+// BLOG STYLE
+// #blogs {
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/book.jpg');
+//     background-position: center;
+//     background-size: cover;
+//     height: 400px;
+
+//     h2 {
+//         text-align: center;
+//         margin-top: 3rem;
+//         font-weight: 400;
+//         letter-spacing: 2px;
+//         font-size: 60px;
+//         text-transform: uppercase;
+//     }
+
+//     .coming h1{
+//         text-align: center;
+//         margin-top: 40px;
+//         text-transform: uppercase;
+//         font-size: 60px;
+//     }
+// }
 
 // CONTACT PAGE STYLE
 .boxes {
