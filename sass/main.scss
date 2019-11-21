@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "config";
 @import "menu";
 
@@ -258,4 +259,245 @@ main {
     height: 20px;
 }
 
+=======
+@import "config";
+@import "menu";
+
+// BASIC SET UP
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    // @include background;
+    background-color: $second-color;
+    color: #fff;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    
+}
+
+// WRAPPER
+#wrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/bg-2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ //LOGO
+#logo {
+    position: absolute;
+    z-index: 2;
+    left: 35px;
+    top: 35px;
+}
+
+.logo-initial {
+    border: $first-color 3px solid;
+    padding: 1rem;
+
+}
+
+// HEADINGS
+.large-heading-1 {
+    font-size: 4rem;
+}
+
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 400;
+
+    &.large-heading {
+        font-size: 3rem;
+    }
+
+    &.small-heading {
+        margin-bottom: 2rem;
+        padding: .2rem 1rem;
+    }
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary {
+    color: $first-color;
+}
+
+main {
+    padding: 4rem;
+    min-height: calc(100vh - 20px);
+    
+    .icons {
+        margin-top: 1rem;
+
+        a {
+            padding: .4rem;
+
+            &:hover {
+                color: $first-color;
+                @include easeOut();
+            }
+        }
+    }
+
+    &#home {
+        text-align: center;
+        overflow: hidden;
+        h1 {
+            margin-top: 10vh;
+        }
+    }
+}
+
+
+//  ABOUT DESIGN
+.about-info {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:    
+        'bioimage bio bio'
+        'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+    
+    .bio-image {
+        grid-area: bioimage;
+        margin: auto;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: $first-color 3px solid;
+    }
+
+    .bio-text a {
+        cursor: pointer;
+        color: $secondary-color;
+    }
+    
+    .bio {
+        grid-area: bio;
+        font-size: 1.5rem;
+    }
+
+    .job h3 {
+        margin-bottom: 1rem;
+    }
+    
+    .job1 {
+        grid-area: job1
+    }
+    
+    .job2 {
+        grid-area: job2
+    }
+    
+    .job3 {
+        grid-area: job3
+    }
+    
+    .job {
+        background: lighten($first-color, 5);
+        padding: .5rem;
+        border-bottom: $secondary-color 5px solid;
+    }
+}
+
+// PORTFOLIO STYLE
+.projects {
+    height: auto;
+    display: grid;
+    grid-gap: .7rem;
+    grid-template-rows: repeat(1, 300px);
+    grid-template-columns: repeat(3, 1fr);
+    
+    .project-img {
+        width: 100%;
+    }
+
+    .project-img:hover {
+        opacity: .5;
+        border-color: $first-color;
+        @include easeOut;
+    }
+}
+
+//  PORTFOLIO BUTTON STYLES
+.btn {
+    display: block;
+    padding: 0.5rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover {
+        background: $first-color;
+        color: $secondary-color;
+    }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: #333;
+}
+
+.btn-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #fff;
+    padding-right: .5rem;
+}
+
+// CONTACT PAGE STYLE
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 2rem;
+        border: 3px solid #fff;
+        padding: 1.5rem 2rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+
+        &:hover {
+            padding: .5rem 1.5rem;
+            background: $first-color;
+            color: #fff;
+
+            span {
+                color: #333;
+            }
+        }
+    }
+}
+
+
+// FOOTER SECTION STYLE
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: #fff;
+    height: 20px;
+}
+
+>>>>>>> 4a7ed68416e5de0a5463cd859d819da67713cc16
 @import "media-query";
