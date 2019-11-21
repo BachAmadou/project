@@ -1,5 +1,6 @@
 
 # project
+### This is my portfolio project files and the resources used to complete this website.
 
 RESOURCES
 1. developer.mozilla.org
