@@ -2,9 +2,9 @@
 # project
 
 RESOURCES
-developer.mozilla.org
-font awesome icons
-Images from unsplash.com
+1. developer.mozilla.org
+2. font awesome icons
+3. Images from unsplash.com
 
 REQUIREMENTS 
 1. Create the "package.json" by writing: 'npm init'
